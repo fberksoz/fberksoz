@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.15/angular.min.js"></script>
+
+
+
+    <script type="text/javascript">
+    var myApp=angular.module('myApp', []);
+    
+    myApp.controller('MyFirstCtrl',  function($scope){
+        $scope.ad = 'faruk';
+        $scope.soyad = 'berksoz';      
+    });
+
+    </script>
+</head>
+
+
+<body ng-controller="MyFirstCtrl">
+    Name :
+    <input type="text" name="ad" id="ad">
+    <br>Surname :
+    <input type="text" name="soyad" id="ad">
+    <br>Hello ----> {{ ad }} {{ soyad }}
+</body>
+
+</html>
